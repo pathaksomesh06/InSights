@@ -1,88 +1,89 @@
 # 🚀 InSights - Intune Management App
 
-Welcome to **InSights**, the ultimate Intune management app designed to simplify and enhance your device management experience. With InSights, you can seamlessly manage your Intune tenant and access a wealth of information about your configuration profiles, apps, and policies. This powerful app is built to provide a comprehensive read-only view of your Intune environment with plans for future updates that will include editing and updating capabilities.
+Welcome to **InSights**, the ultimate Intune management app designed to simplify and enhance your device management experience. With InSights, you can seamlessly manage your Intune tenant and access a wealth of information about your configuration profiles, apps, and policies. This powerful app provides a comprehensive read-only view of your Intune environment with plans for future updates that will include editing and updating capabilities.
 
-## Features
 
-- **🔍 Tenant Information**
+## 📋 Features
+
+- **Tenant Information**
   - View detailed information about your Intune tenant.
 
-- **🛠️ Policy Management**
+- **Policy Management**
   - Access all configuration and compliance policies within your tenant.
 
-- **📱 App Management**
+- **App Management**
   - See all managed apps deployed within your tenant.
 
-- **💻 Device Management**
+- **Device Management**
   - Get detailed information about all managed devices.
 
-- **⚙️ App Configuration (App & Device)**
+- **App Configuration (App & Device)**
   - View app and device configuration profiles.
 
-- **🛡️ App Protection**
+- **App Protection**
   - Access app protection policies.
 
-- **🍎 Apple Enrollment Types**
+- **Apple Enrollment Types**
   - View Apple enrollment types configured in your tenant.
 
-- **✈️ AutoPilot**
+- **AutoPilot**
   - Manage AutoPilot profiles.
 
-- **🔐 Endpoint Security**
+- **Endpoint Security**
   - View endpoint security policies.
 
-- **🖐️ Enrollment Restrictions**
+- **Enrollment Restrictions**
   - Check enrollment restrictions applied.
 
-- **📄 Enrollment Status Page**
+- **Enrollment Status Page**
   - View the enrollment status page configurations.
 
-- **⬆️ Feature Updates**
+- **Feature Updates**
   - Access feature update configurations.
 
-- **📋 iOS/iPadOS Update Policies**
+- **iOS/iPadOS Update Policies**
   - View update policies for iOS/iPadOS devices.
 
-- **🛠️ Scripts & Remediations**
+- **Scripts & Remediations**
   - Manage scripts and remediations.
 
-- **💻 Shell Scripts (macOS)**
+- **Shell Scripts (macOS)**
   - Access macOS shell scripts.
 
-- **🔍 Custom Attributes (macOS)**
+- **Custom Attributes (macOS)**
   - View custom attributes for macOS devices.
 
-- **⬆️ macOS Update Policies**
+- **macOS Update Policies**
   - Check update policies for macOS.
 
-- **🛡️ Antivirus Policies**
+- **Antivirus Policies**
   - Access antivirus policies.
 
-- **🔒 Keychain Storage**
+- **Keychain Storage**
   - The app securely stores the client ID in the keychain for seamless authentication.
 
-- **🚪 Log Out**
+- **Log Out**
   - Easy log out to ensure secure access management.
 
-## Upcoming Features
+## 🔜 Upcoming Features
 
 - **Edit and Update Policies**
 - **App Deployment**
 - **Configuration Profile Updates**
 
-## API Permissions Required
+## 🔑 API Permissions Required
 
 To use the InSights app, ensure that the following API permissions are granted in your Azure app registration:
 
-- **DeviceManagementManagedDevices.Read.All**
-- **DeviceManagementConfiguration.Read.All**
-- **DeviceManagementApps.Read.All**
-- **Directory.Read.All**
-- **User.Read**
-- **Device.Read**
-- **Group.Read.All**
+- `DeviceManagementManagedDevices.Read.All`
+- `DeviceManagementConfiguration.Read.All`
+- `DeviceManagementApps.Read.All`
+- `Directory.Read.All`
+- `User.Read`
+- `Device.Read`
+- `Group.Read.All`
 
-## App Registration Setup
+## 🛠️ App Registration Setup
 
 1. **Register the App in Azure:**
    - Go to the [Azure portal](https://portal.azure.com/) and navigate to **Azure Active Directory** > **App registrations** > **New registration**.
@@ -106,8 +107,8 @@ To use the InSights app, ensure that the following API permissions are granted i
    - Upon first launch, you will be prompted to enter your **Client ID**.
    - The app will securely store the Client ID in the keychain for seamless future authentication.
 
-## Installation
+## 📥 Installation
 
-1. Go to the [Releases](https://github.com/yourusername/insights-intune-app/releases) page.
+1. Go to the [Releases](https://github.com/pathaksomesh06/InSights/releases) page.
 2. Download the latest release for your operating system.
 3. Follow the installation instructions provided with the release.
