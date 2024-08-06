@@ -71,24 +71,18 @@ Welcome to **InSights**, the ultimate Intune management app designed to simplify
 - **App Deployment**
 - **Configuration Profile Updates**
 
-## API Permissions Required
-
-To use the InSights app, ensure that the following API permissions are granted in your Azure app registration:
-
-- `DeviceManagementManagedDevices.Read.All`
-- `DeviceManagementConfiguration.Read.All`
-- `DeviceManagementApps.Read.All`
-- `Directory.Read.All`
-- `User.Read`
-- `Device.Read`
-- `Group.Read.All`
-
 ## App Registration Setup
 
 1. **Register the App in Azure:**
-   - Go to the [Azure portal](https://portal.azure.com/) and navigate to **Azure Active Directory** > **App registrations** > **New registration**.
-   - Enter the name for your app, such as "InSights".
-   - Enter the Redirect URI: `https://login.microsoftonline.com/common/oauth2/nativeclient`.
+   - Sign in to the Microsoft Entra admin center as at least a Cloud Application Administrator.
+   - If you have access to multiple tenants, use the Settings icon  in the top menu to switch to the tenant in which you want to register the application from the Directories + subscriptions menu.
+   - Browse to Identity > Applications > App registrations and select New registration.
+   - Enter a display Name for the application as **InSights**.
+   - Under Manage, select Authentication
+   - Under Platform configurations, select Add a **platform**
+   - Under Configure platforms, select iOS / macOS as platform to configure its settings.
+   - Enter the app Bundle ID - **com.IRL.InSights**
+   - Enter the Redirect URI as **msauth.com.IRL.InSights://auth**
 
 2. **API Permissions:**
    - Go to your app registration and navigate to **API permissions** > **Add a permission**.
@@ -104,11 +98,11 @@ To use the InSights app, ensure that the following API permissions are granted i
    - Grant admin consent for the required permissions.
 
 3. **Using the App:**
-   - Upon first launch, you will be prompted to enter your **Client ID**.
+   - Upon first launch, you will be prompted to enter your **Client ID**., **Secret** & **Tenant Id**
    - The app will securely store the Client ID in the keychain for seamless future authentication.
 
 ## Installation
 
-1. Go to the [Releases](https://github.com/pathaksomesh06/InSights/releases) page.
+1. Go to the [Releases][(https://github.com/pathaksomesh06/InSights/releases] page.
 2. Download the latest release for your operating system.
 3. Follow the installation instructions provided with the release.
